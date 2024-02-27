@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Version Para Movil */
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #FF7F11;
+    font-family: Arial;
+  }
+  
+  /* Links dentro de la  navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; 
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #FF3F00;
+  }
+  
+  /* Contenido Dropdow (oculto) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links dentro del dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #FF7F11;
+  }
+  
+  /* Mostrar el menu dropdown */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/*      ACORDEON    */
+
+/* Estos estilos serán usados para abrir y cerrar el panel de acordeones */
+.accordion {
+    background-color: #BEB7A4;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  /*añadir un background color al boton si está activo o clickdo
+   (la clase .active se añadirá con javascript) */
+  .activo, .accordion:hover {
+    background-color: #FF3F00;
+    color: white;
+  }
+  
+  /* estilos del panel de acordeones. (oculto por defecto) */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .activo:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+
+
+:root {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    padding: 1rem;
+    margin: 2px;
+    text-align: justify;
+    background-color: #FFFFFC;
+
+}
+
+header {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_img>img{
+    margin: 20px 0;
+    width: 300px;
+    border-radius: 15%;
+
+}
+footer{
+  background-color:#FF7F11;
+}
+
+.entrevistaYoutube{
+  width: 400px;
+  height: 300px;
+}
+
+
+
+
+/* Version Para Tablet */
+
+@media (min-width: 968px) {
+    :root {
+        font-size: 16px;
+    }
+    body{
+      padding: 0 60px;
+    }
+    footer{
+      height: 50px;
+    }
+    footer>a{
+      text-decoration: none;
+    }
+    
+}
